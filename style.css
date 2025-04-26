@@ -1,76 +1,227 @@
-/* Reset */
+/* Reset e estilo básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(135deg, #f0f4f8, #e8f1fd);
-    color: #222;
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif; /* Mantém o estilo Roboto para o corpo */
+    background-color: #f4f7fc;
+    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
   
-  /* Header */
-  header {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    text-align: center;
-  }
-  
-  .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2678e3;
-    letter-spacing: 1px;
-  }
-  
-  /* Main content */
-  main {
-    flex: 1;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #1e3a8a;
-  }
-  
-  .intro p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  
-  /* Iframe Box */
-  .iframe-box {
+/* Container comum */
+.container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 16 / 9;
-    background: #fff;
-  }
+}
   
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Footer */
-  footer {
+/* Header */
+header {
+    background-color: #002e4d; /* azul escuro */
+    padding: 40px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
-    background-color: #f1f5f9;
-    font-size: 0.9rem;
-    color: #888;
-  }
+}
   
+.logo {
+    font-size: 50px; /* Título maior */
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive; /* Título com a fonte caligráfica */
+}
+  
+/* Hero Section */
+section.hero {
+    background-color: #005c99; /* azul médio */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+  
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Título com fonte caligráfica */
+}
+  
+.hero p {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+  
+/* Mapa */
+.map-container {
+    padding: 50px 0;
+    background-color: #e6f2ff; /* azul claro */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+  
+.iframe-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+  
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+iframe:hover {
+    transform: scale(1.03);
+}
+  
+/* Imagens das seções */
+.section-image {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+  
+/* Sobre o Conecta Saúde e Nossos Serviços - Layout Igual ao "Precisa de Ajuda" */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+  
+.sobre-texto h1 {
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+  
+.sobre-texto p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+  
+/* Nossos Serviços Layout Igual ao "Precisa de Ajuda" */
+.servicos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.servicos-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.servicos-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.servicos-texto h1 {
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.servicos-texto p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+  
+/* Ajuda com imagem à direita */
+.ajuda-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+  
+.ajuda-texto {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+  
+.ajuda-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.ajuda-imagem img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #002e4d;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .ajuda-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ajuda-texto {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .servicos-container, .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-image {
+        margin-top: 20px;
+    }
+}

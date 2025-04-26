@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeoNiterói</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conecta Saúde</title>
+  <!-- Link para a fonte caligráfica -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Link para a fonte Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Conecta Saúde</div>
+    <div class="container">
+      <div class="logo">Conecta Saúde</div>
+    </div>
   </header>
 
   <main>
-    <section class="intro">
-      <h1>Descubra as unidades mais próximas!</h1>
-      <p>Valorize a sua saúde mental e física</p>
+    <!-- Início -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <h1>Encontre as unidades mais próximas de você</h1>
+        <p>Encontre informações úteis sobre as unidades de saúde para valorizar sua saúde mental e física.</p>
+      </div>
     </section>
 
-    <section class="iframe-box">
-      <iframe
-        id="meuIframe"
-        src="https://geoniteroi.maps.arcgis.com/apps/instant/lookup/index.html?appid=6b957c6c478f47a9a53e2471cf23e4d6"
-        title="Mapa Interativo"
-        allowfullscreen
-      ></iframe>
+    <!-- Mapa -->
+    <section class="map-container">
+      <div class="container">
+        <div class="iframe-wrapper">
+          <iframe
+            id="meuIframe"
+            src="https://geoniteroi.maps.arcgis.com/apps/instant/lookup/index.html?appid=6b957c6c478f47a9a53e2471cf23e4d6"
+            title="Mapa Interativo"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="hero" id="sobre">
+      <div class="container sobre-container">
+        <div class="sobre-texto">
+          <h1>Sobre o Conecta Saúde</h1>
+          <p>Somos uma plataforma dedicada a conectar pessoas com unidades de saúde, promovendo o acesso à informação e bem-estar.</p>
+        </div>
+        <div class="sobre-imagem">
+          <img src="imagemnit1.jpg" alt="Sobre o Conecta Saúde" class="section-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossos Serviços (Agora igual ao "Precisa de Ajuda") -->
+    <section class="hero" id="servicos">
+      <div class="container servicos-container">
+        <div class="servicos-imagem">
+          <img src="imagemnit3.jpg" alt="Nossos Serviços" class="section-image" />
+        </div>
+        <div class="servicos-texto">
+          <h1>Nossos Serviços</h1>
+          <p>Disponibilizamos localização de unidades, informações sobre atendimentos, agendamentos e suporte à saúde mental.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Precisa de Ajuda? -->
+    <section class="hero ajuda" id="ajuda">
+      <div class="container ajuda-container">
+        <div class="ajuda-texto">
+          <h1>Precisa de Ajuda?</h1>
+          <p>Consulte as perguntas frequentes ou entre em contato com nossa equipe de suporte.</p>
+          <ul class="faq">
+            <li>📍 Como encontro unidades perto de mim?</li>
+            <li>📅 Posso agendar uma consulta online?</li>
+            <li>📞 Como entro em contato com a central?</li>
+          </ul>
+        </div>
+        <div class="ajuda-imagem">
+          <img src="imagemnit5.jpg" alt="Ajuda Conecta Saúde" class="section-image" />
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 ConectaSaúde. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Conecta Saúde. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
