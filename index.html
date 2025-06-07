@@ -9,6 +9,17 @@
   <!-- Link para a fonte Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y77EBFYBYZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Y77EBFYBYZ');
+  </script>
+  <!-- Fim do Google Analytics -->
+
 </head>
 <body>
   <header>
@@ -34,8 +45,8 @@
             id="meuIframe"
             src="https://geoniteroi.maps.arcgis.com/apps/instant/lookup/index.html?appid=6b957c6c478f47a9a53e2471cf23e4d6"
             title="Mapa Interativo"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
@@ -53,7 +64,7 @@
       </div>
     </section>
 
-    <!-- Nossos Serviços (Agora igual ao "Precisa de Ajuda") -->
+    <!-- Nossos Serviços -->
     <section class="hero" id="servicos">
       <div class="container servicos-container">
         <div class="servicos-imagem">
